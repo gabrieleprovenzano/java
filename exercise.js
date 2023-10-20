@@ -6,4 +6,4 @@ function printName() {
     }
 }
 
-printName()
+setTimeout(printName, 1000);
