@@ -1,11 +1,10 @@
 function multiplyByTwo(number) {
-    function inner(input) {
-      return input * number;
-    }
-
-    return inner
+  return function inner(input) {
+    const result = input * number;
+    console.log(result);
+    return result;
+  }
 }
 
-const multiply = multiplyByTwo(2); 
-const result = multiply(4);
-console.log(result);
+const multiplier = multiplyByTwo(4);
+multiplier(2);
